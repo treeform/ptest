@@ -35,7 +35,7 @@ for file in walkDirRec("."):
     continue
   let homefolder = file.splitFile()[0]
   setCurrentDir(homefolder)
-  let (output, err) = execCmdEx(&"nim c --verbosity:0 -r {file}")
+  let (output, err) = execCmdEx(&"nim c --verbosity:0 --hints:off -r {file}")
   writeFile(tmp, output)
   setCurrentDir(pwd)
   if err != 0:
