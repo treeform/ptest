@@ -1,5 +1,15 @@
 # Print-Testing
 
+`nimble install ptest`
+
+![Github Actions](https://github.com/treeform/ptest/workflows/Github%20Actions/badge.svg)
+
+[API reference](https://nimdocs.com/treeform/ptest)
+
+This library has no dependencies other than the Nim standard libarary.
+
+## About
+
 **You debug with print statements? Why don't you also test with them?**
 
 Idea behind print testing is that you can run a script that runs through major uses of the library. Then the output is compared to the previous output, if they don't match that's an error. That’s it.
@@ -144,7 +154,3 @@ Print-testing is related to Characterization Test or Golden Master Testing. I ne
 ## You should try it.
 
 Are you lazy? Do you hate writing tests? Try this method! Tell me how it works and what you discover.
-
-
-
-
